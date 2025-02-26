@@ -6,6 +6,11 @@
   </div>
 </div>
 
+
+<% if current_user.id == @the_board.user_id %>
+<a href = "/delete_post/#{@the_board.id}">Delete board </a>
+<%end%>
+
 <hr>
 
 <h2>
