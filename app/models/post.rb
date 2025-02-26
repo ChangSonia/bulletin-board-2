@@ -16,4 +16,7 @@ class Post < ApplicationRecord
   validates(:title, presence: true)
   validates(:body, presence: true)
   validates(:expires_on, presence: true)
+  
+  belongs_to :board, foreign_key:"board_id"
+  belongs_to :user, foreign_key:"user_id"
 end
