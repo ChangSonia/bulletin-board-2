@@ -2,7 +2,7 @@
 #
 # Table name: posts
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  body       :text
 #  expires_on :date
 #  title      :string
